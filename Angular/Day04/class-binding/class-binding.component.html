@@ -1,0 +1,16 @@
+<p>class-binding works!</p>
+
+
+<h2 [class]="myclass">Apply Class Binding</h2>
+<!-- hw using ternary operator apply class binding -->
+
+<h2 [class.danger]="rating<4"
+    [class.warning]="rating>4"
+>Apply class binding on condition</h2>
+
+<!-- ngClass => It is attribute directive. When u want set multiple css classes we go for ngClass -->
+
+
+<div [ngClass]="jsonobj">
+  Apply ngClass Directive 
+</div>
