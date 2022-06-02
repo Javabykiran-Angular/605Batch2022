@@ -1,0 +1,26 @@
+<p>event-binding2 works!</p>
+
+<img src="../../assets/bg_img.jpg" alt="" (click)="onImageClick()">
+<br><br>
+
+<!-- $event=> it is a special variable given by angular 
+it gives current dom element information
+-->
+<button (click)="onDollerEvent($event)" id="btnDoller" value="Doller Event Data" >Doller Event </button>
+<hr>
+
+<!-- template Ref. variable 
+  to access dom element in ts file 
+  it holds full handle of that element
+  we can manipulate of that element
+-->
+
+
+<input type="text" placeholder="Enter the name " #inputname> <br> <br>
+
+<button (click)="onTemplateRef(inputname)">Template Ref variable </button>
+<hr>
+
+<input type="text" placeholder="Enter the name " #inputname1> <br> <br>
+
+<button (click)="onTemplateRef1(inputname1.value)">Template Ref variable </button>
