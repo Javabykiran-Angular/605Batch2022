@@ -1,0 +1,26 @@
+<p>event-binding3 works!</p>
+
+<!-- <input #inputnum1 type="text" placeholder="Enter the Number 1"> <br><br>
+<input #inputnum2 type="text" placeholder="Enter the Number 2"> <br><br>
+<button (click)="onAddition(inputnum1.value,inputnum2.value)" >Addition</button> <br><br>
+<input type="text" [value]="result"
+placeholder="Display result"> <br><br>
+<hr>
+<input #inputname type="text" (change)="onChange(inputname)" placeholder="Enter the name.."> -->
+
+<input type="text" (keyup)="onkeyUp()"
+ placeholder="Keyup Event "> <br><br>
+
+
+<input type="text" (keydown)="onkeyDown()"
+ placeholder="Keydown Event "> <br><br> 
+ <hr>
+
+ <!-- ngModel => It is used for two way binding,ju can apply on any html tag 
+  if u want use ngModel u can use a notation banna in the box notation
+  [()]
+-->
+
+ <input type="text" [(ngModel)]="name" placeholder="Enter the Name">
+ <br>
+{{name}}
