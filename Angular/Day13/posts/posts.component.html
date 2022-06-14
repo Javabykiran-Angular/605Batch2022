@@ -1,0 +1,17 @@
+<p>posts works!</p>
+
+<table border="2px">
+  <thead>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Body</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of posts">
+        <td> {{item.id}} </td>
+        <td> {{item.title}} </td>
+        <td> {{item.body}} </td>
+
+    </tr>
+  </tbody>
+</table>
