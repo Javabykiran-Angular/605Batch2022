@@ -1,0 +1,19 @@
+
+input{
+  margin: 5px;
+  padding: 5px;
+  border-radius: 7px;
+  border: 1px solid rgb(9, 74, 52);
+}
+button{
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid blue;
+}
+
+button:hover{
+  background-color: green;
+  color: white;
+  border: 1px solid black;
+}
